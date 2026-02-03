@@ -4,9 +4,11 @@ import Landing from "./screens/Landing"
 import Projects from "./screens/Projects"
 import Contact from "./screens/Contact"
 import Footer from "./screens/Footer"
+import Portfolios from "./screens/Portfolios"
 
 import './App.css'
 import './index.css';
+import Hero from "./screens/Hero";
 
 function App() {
   const [selectedPage,setSelectedPage] = useState("home");
@@ -23,23 +25,33 @@ useEffect(()=>{
 
   return (
     
-    <div className="app bg-deep-blue">
-    <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage}
-    isTopOfPage={isTopOfPage}/>
-    <div className="w-5/6 mx-auto md:h-full">
-    {/* {isAboveMediumScreens &&(
-      <DotGroup selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-    )}  */}
-    
-    <Landing setSelectedPage={setSelectedPage}/>
-    </div>
-    <Projects/>
-     <div className="w-5/6 mx-auto ">
-    <Contact/>
-    </div>
-   
-    <Footer/>
-    </div>
+<div className="app bg-deep-blue">
+  <Navbar
+    selectedPage={selectedPage}
+    setSelectedPage={setSelectedPage}
+    isTopOfPage={isTopOfPage}
+  />
+
+  {/* LANDING (constrained) */}
+  <section className="w-5/6 mx-auto md:h-full">
+    {/* <Landing setSelectedPage={setSelectedPage} /> */}
+   <Hero/>
+  </section>
+
+  {/* PROJECTS (FULL WIDTH, FULL SCREEN) */}
+  <section id="projects">
+    <Portfolios/>
+ {/* <Projects /> */}
+  </section>
+
+  {/* CONTACT (constrained again) */}
+  <section className="w-5/6 mx-auto">
+    <Contact />
+  </section>
+
+  <Footer />
+</div>
+
   )
 }
 
