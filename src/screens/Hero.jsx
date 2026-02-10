@@ -1,5 +1,5 @@
-import portrait from '../assets/Pro.jpeg';
-
+//import portrait from '../assets/Pro.jpeg';
+import proNoB from '../assets/proNoB.png';
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-soft overflow-hidden">
@@ -44,7 +44,7 @@ const Hero = () => {
           <div className="absolute w-[360px] h-[360px] bg-accent rounded-full blur-2xl"></div>
 
           <img
-            src={portrait}
+            src={proNoB}
             alt="portrait"
             className="relative z-10 w-[320px] object-cover"
           />
