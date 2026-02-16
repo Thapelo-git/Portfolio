@@ -25,26 +25,29 @@ useEffect(()=>{
 
   return (
     
-<div className="app bg-deep-blue">
+<div >
   <Navbar
     selectedPage={selectedPage}
     setSelectedPage={setSelectedPage}
     isTopOfPage={isTopOfPage}
   />
 
-  {/* LANDING (constrained) */}
-  <section className="w-5/6 mx-auto md:h-full">
+
+  <section className=" mx-auto md:h-full">
     {/* <Landing setSelectedPage={setSelectedPage} /> */}
-   <Hero/>
+   <Hero
+
+    setSelectedPage={setSelectedPage}
+    />
   </section>
 
-  {/* PROJECTS (FULL WIDTH, FULL SCREEN) */}
+ 
   <section id="projects">
     <Portfolios/>
  {/* <Projects /> */}
   </section>
 
-  {/* CONTACT (constrained again) */}
+ 
   <section className="w-5/6 mx-auto">
     <Contact />
   </section>

@@ -1,29 +1,18 @@
 //import portrait from '../assets/Pro.jpeg';
 import proNoB from '../assets/proNoB.png';
-const Hero = () => {
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+const Hero = ({setSelectedPage}) => {
   return (
     <section className="relative min-h-screen bg-soft overflow-hidden">
       
       {/* BACKGROUND TEXT */}
       <h1 className="absolute inset-0 flex items-center justify-center 
         text-[18vw] font-black text-black/5 select-none pointer-events-none">
-        DESIGNER
+        Full Stack Developer
       </h1>
 
-      {/* NAVBAR */}
-      <nav className="relative z-20 flex justify-between items-center px-10 py-6">
-        <ul className="flex gap-6 text-sm font-medium">
-          <li>Home</li>
-          <li>Services</li>
-          <li>Contact</li>
-        </ul>
-
-        <div className="font-bold text-lg">grafty</div>
-
-        <button className="bg-black text-white px-5 py-2 rounded-full text-sm">
-          Hire Me!
-        </button>
-      </nav>
+  
 
       {/* MAIN CONTENT */}
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 items-center px-10 h-[80vh]">
@@ -51,10 +40,10 @@ const Hero = () => {
 
           {/* FLOATING TAGS */}
           <span className="absolute top-16 -left-10 bg-black text-white text-sm px-4 py-1 rounded-full">
-            Branding
+           Mobile Developer
           </span>
           <span className="absolute top-28 right-0 bg-black text-white text-sm px-4 py-1 rounded-full">
-            Designer
+           Software Developer
           </span>
 
           {/* SIGNATURE */}
@@ -65,14 +54,16 @@ const Hero = () => {
 
         {/* RIGHT CARD */}
         <div className="flex justify-center lg:justify-end">
-          <div className="bg-white rounded-2xl p-6 w-[280px] shadow-xl">
+          <div className="bg-white text-gray-500 rounded-2xl p-6 w-[280px] shadow-xl">
             <p className="text-sm mb-4">
-              <strong>7+ Years of Expertise</strong>, Award-Winning Creative
-              Designer in California, USA.
+              <strong>2+ Years of Expertise</strong> React Native & React JS(MERN stack).Freelance background in 
+                    React,Node,& PostgreSQL.
             </p>
-            <p className="underline text-sm mb-4">hello@linda.com</p>
-
-            <button className="w-full bg-black text-white py-3 rounded-full text-sm">
+            <p className="underline text-sm mb-4">chabathapelo1@gmail.com</p>
+           
+            <button className="w-full bg-black text-white py-3 rounded-full text-sm"
+            onClick={()=> setSelectedPage("contact")} 
+                            >
               LET’S DISCUSS
             </button>
           </div>
