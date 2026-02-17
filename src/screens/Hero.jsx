@@ -60,12 +60,17 @@ const Hero = ({setSelectedPage}) => {
                     React,Node,& PostgreSQL.
             </p>
             <p className="underline text-sm mb-4">chabathapelo1@gmail.com</p>
-           
-            <button className="w-full bg-black text-white py-3 rounded-full text-sm"
-            onClick={()=> setSelectedPage("contact")} 
-                            >
+            <AnchorLink 
+                className='w-full bg-black text-white py-3 px-4 rounded-full text-sm'
+                onClick={()=>setSelectedPage={setSelectedPage}} 
+                href="#contact">
+                     LET’S DISCUSS
+                </AnchorLink>
+            {/* <button className="w-full bg-black text-white py-3 rounded-full text-sm"
+            onClick={()=> setSelectedPage={setSelectedPage}} 
+                   href="#contact"         >
               LET’S DISCUSS
-            </button>
+            </button> */}
           </div>
         </div>
 
