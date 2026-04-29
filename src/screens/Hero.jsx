@@ -19,11 +19,12 @@ const Hero = ({setSelectedPage}) => {
 
         {/* LEFT TEXT */}
         <div>
-          <p className="mb-4">👋 Hi, I’m Jessy Linda</p>
+          <p className="mb-4"> Hi, I’m Thapelo Chaba</p>
           <h2 className="text-5xl font-extrabold leading-tight">
-            BRANDING, <br />
-            PRODUCT UI/UX <br />
-            & DESIGN.
+           Full Stack <br />
+            Developer <br />
+            & Mobile <br />
+            Developer
           </h2>
         </div>
 
@@ -47,9 +48,9 @@ const Hero = ({setSelectedPage}) => {
           </span>
 
           {/* SIGNATURE */}
-          <span className="absolute bottom-10 text-purple-600 text-4xl font-signature">
-            Jessy
-          </span>
+          {/* <span className="absolute bottom-10 text-purple-600 text-4xl font-signature">
+            Thapelo
+          </span> */}
         </div>
 
         {/* RIGHT CARD */}

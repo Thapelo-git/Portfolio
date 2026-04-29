@@ -1,61 +1,58 @@
 import { useEffect, useState } from "react";
-import Navbar from "./screens/Navbar"
-import Landing from "./screens/Landing"
-import Projects from "./screens/Projects"
-import Contact from "./screens/Contact"
-import Footer from "./screens/Footer"
-import Portfolios from "./screens/Portfolios"
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./screens/Navbar";
+import Hero from "./screens/Hero";
+import Portfolios from "./screens/Portfolios";
+import Contact from "./screens/Contact";
+import Footer from "./screens/Footer";
+import ProjectDetails from "./screens/ProjectDetails";
 
 import './App.css'
 import './index.css';
-import Hero from "./screens/Hero";
 
 function App() {
-  const [selectedPage,setSelectedPage] = useState("home");
-  const [isTopOfPage,setIsTopOfPage]=useState(true);
-useEffect(()=>{
-    const handleScroll = () =>{
-      if(window.scrollY === 0) setIsTopOfPage(true);
-      if(window.scrollY !== 0) setIsTopOfPage(false)
-    }
-  window.addEventListener("scroll",handleScroll);
-  return () => window.removeEventListener("scroll",handleScroll);
-  },[]);
+  const [selectedPage, setSelectedPage] = useState("home");
+  const [isTopOfPage, setIsTopOfPage] = useState(true);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) setIsTopOfPage(true);
+      if (window.scrollY !== 0) setIsTopOfPage(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    
-<div >
-  <Navbar
-    selectedPage={selectedPage}
-    setSelectedPage={setSelectedPage}
-    isTopOfPage={isTopOfPage}
-  />
+    <Routes>
+      {/* Main Portfolio Page */}
+      <Route
+        path="/"
+        element={
+          <div>
+            <Navbar
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+              isTopOfPage={isTopOfPage}
+            />
+            <section className="mx-auto md:h-full">
+              <Hero setSelectedPage={setSelectedPage} />
+            </section>
+            <section id="projects">
+              <Portfolios />
+            </section>
+            <section className="w-5/6 mx-auto">
+              <Contact />
+            </section>
+            <Footer />
+          </div>
+        }
+      />
 
-
-  <section className=" mx-auto md:h-full">
-    {/* <Landing setSelectedPage={setSelectedPage} /> */}
-   <Hero
-
-    setSelectedPage={setSelectedPage}
-    />
-  </section>
-
- 
-  <section id="projects">
-    <Portfolios/>
- {/* <Projects /> */}
-  </section>
-
- 
-  <section className="w-5/6 mx-auto">
-    <Contact />
-  </section>
-
-  <Footer />
-</div>
-
-  )
+      {/* Project Details Page */}
+      <Route path="/project/:id" element={<ProjectDetails />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
