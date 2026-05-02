@@ -52,25 +52,24 @@ const Navbar =({isTopOfPage ,selectedPage,setSelectedPage})=>{
                 )}
                 { 
                     !isAboveSmallScreens && isMenuToggled && (
-                        <div className="fixed right-0 bottom-0 h-full bg-red w-[300px]">
-                            <div className="flex justify-end p-12 " >
-                            <button onClick={()=>setIsMenuToggled(!isMenuToggled)} className="bg-red size-16 rounded ring-2 ring-blue-500">
-                            <img alt="menu-icon" src={Close} />
-                            </button>
-                            </div>
-                            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
-                            <Link 
-                        page="Home" selectedPage={selectedPage} 
-                        setSelectedPage={setSelectedPage}/>
-                        {/* <Link 
-                        page="Skills" selectedPage={selectedPage} 
-                        setSelectedPage={setSelectedPage}/> */}
-                        <Link 
-                        page="Projects" selectedPage={selectedPage} 
-                        setSelectedPage={setSelectedPage}/>
-                        <Link 
-                        page="Contact" selectedPage={selectedPage} 
-                        setSelectedPage={setSelectedPage}/>
+                        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex justify-end transition-all duration-300">
+                            <div className="h-full bg-white w-[250px] shadow-2xl flex flex-col animate-in slide-in-from-right duration-300">
+                                <div className="flex justify-end p-6" >
+                                    <button onClick={()=>setIsMenuToggled(!isMenuToggled)} className="p-2 rounded-full hover:bg-gray-100 transition-colors">
+                                        <img alt="menu-icon" src={Close} className="w-6 h-6" />
+                                    </button>
+                                </div>
+                                <div className="flex flex-col gap-8 mt-10 text-center text-xl text-gray-800 font-semibold">
+                                    <Link 
+                                        page="Home" selectedPage={selectedPage} 
+                                        setSelectedPage={setSelectedPage}/>
+                                    <Link 
+                                        page="Projects" selectedPage={selectedPage} 
+                                        setSelectedPage={setSelectedPage}/>
+                                    <Link 
+                                        page="Contact" selectedPage={selectedPage} 
+                                        setSelectedPage={setSelectedPage}/>
+                                </div>
                             </div>
                         </div>
                     )

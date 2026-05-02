@@ -31,8 +31,8 @@ const Contact = () => {
                     visible:{opacity:1,x:0}
                 }}>
                     <div>
-                <p className='font-playfair font-semibold text-4xl '>
-                    <span className='text-red'>CONTACT ME</span>
+                <p className='font-playfair font-semibold text-4xl text-dark'>
+                    <span className='text-accent'>CONTACT ME</span>
                 </p>
                 <div className='flex  my-5'>
                 <LineGradient width=' w-2/4'/>
@@ -50,12 +50,12 @@ const Contact = () => {
                     visible:{opacity:1,y:0}
                 }}
                 >
-                    <div className='flex col-span-2 my-4 gap-5'>
+                    <div className='flex col-span-2 my-4 gap-5 text-dark'>
                     <Email/>
                     <p>chabathapelo1@gmail.com</p>
                     
                     </div>
-                    <div className='flex col-span-2 my-4 gap-5'>
+                    <div className='flex col-span-2 my-4 gap-5 text-dark'>
                     <Phone/>
                     <p>0766465828</p>
                     </div>
@@ -80,8 +80,8 @@ const Contact = () => {
                     method='POST'
                     >
                         <input 
-                        className='w-full bg-grey font-semibold text-deep-blue placeholder-opaque-black
-                        p-3 '
+                        className='w-full bg-white/80 font-semibold text-dark placeholder-gray-500
+                        p-3 rounded-lg border border-transparent focus:border-accent outline-none transition-colors'
                         type='text' placeholder='NAME' {...register("name",{
                             required:true,
                             maxLength:100,
@@ -93,8 +93,8 @@ const Contact = () => {
                             </p>
                         )}
                         <input 
-                        className='w-full bg-grey font-semibold text-deep-blue placeholder-opaque-black
-                        p-3 mt-5'
+                        className='w-full bg-white/80 font-semibold text-dark placeholder-gray-500
+                        p-3 mt-5 rounded-lg border border-transparent focus:border-accent outline-none transition-colors'
                         type='email' placeholder='EMAIL' {...register("email",{
                             required:true,
                            
@@ -108,8 +108,8 @@ const Contact = () => {
                             </p>
                         )}
                         <textarea 
-                       className='w-full bg-grey font-semibold text-deep-blue placeholder-opaque-black
-                       p-3 mt-5'
+                       className='w-full bg-white/80 font-semibold text-dark placeholder-gray-500
+                       p-3 mt-5 rounded-lg border border-transparent focus:border-accent outline-none transition-colors'
                        type='text' placeholder='MESSAGE'
                        rows="4" cols="50"
                        {...register("message",{
@@ -125,8 +125,8 @@ const Contact = () => {
                         )}
                         <button
                         type='submit'
-                        className='p-5 bg-red font-semibold  text-deep-blue
-                        mt-5 hover:bg-gradient-rainbow hover:text-white transition duration-500'
+                        className='p-5 bg-accent rounded-lg font-semibold text-white
+                        mt-5 hover:bg-dark transition duration-500 shadow-md hover:shadow-lg'
                         >
                             SEND ME A MESSAGE
                         </button>

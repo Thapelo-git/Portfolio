@@ -41,8 +41,10 @@ function App() {
             <section id="projects">
               <Portfolios />
             </section>
-            <section className="w-5/6 mx-auto">
-              <Contact />
+            <section className="w-full bg-soft">
+              <div className="w-5/6 mx-auto">
+                <Contact />
+              </div>
             </section>
             <Footer />
           </div>

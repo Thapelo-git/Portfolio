@@ -66,6 +66,7 @@ export const RadialScrollGallery = forwardRef(
     {
       children,
       scrollDuration = 2500,
+      mobileScrollDuration = 1500,
       visiblePercentage = 45,
       baseRadius = 550,
       mobileRadius = 220,
@@ -89,6 +90,7 @@ export const RadialScrollGallery = forwardRef(
     const [isMounted, setIsMounted] = useState(false);
 
     const currentRadius = useResponsiveValue(baseRadius, mobileRadius);
+    const currentScrollDuration = useResponsiveValue(scrollDuration, mobileScrollDuration);
     const circleDiameter = currentRadius * 2;
 
     const { visibleDecimal, hiddenDecimal } = useMemo(() => {
@@ -152,25 +154,26 @@ export const RadialScrollGallery = forwardRef(
               },
             }
           );
-
-          gsap.to(containerRef.current, {
-            rotation: 360,
-            ease: 'none',
-            scrollTrigger: {
-              trigger: pinRef.current,
-              pin: true,
-              start: startTrigger,
-              end: `+=${scrollDuration}`,
-              scrub: 1,
-              invalidateOnRefresh: true,
-            },
-          });
         }
+
+        // Always apply rotation, as the component's core functionality depends on it
+        gsap.to(containerRef.current, {
+          rotation: 360,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: pinRef.current,
+            pin: true,
+            start: startTrigger,
+            end: `+=${currentScrollDuration}`,
+            scrub: 1,
+            invalidateOnRefresh: true,
+          },
+        });
       },
       {
         scope: pinRef,
         dependencies: [
-          scrollDuration,
+          currentScrollDuration,
           currentRadius,
           startTrigger,
           childrenCount,

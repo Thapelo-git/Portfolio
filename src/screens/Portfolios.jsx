@@ -1,12 +1,24 @@
 import { useNavigate } from "react-router-dom";
+import { useState, useRef } from "react";
 import { RadialScrollGallery } from "../component/RadialScrollGallery";
 import { projects } from "../data/projects";
 
 const Portfolios = () => {
   const navigate = useNavigate();
+  const [activeSlide, setActiveSlide] = useState(0);
+  const scrollRef = useRef(null);
+
+  const handleScroll = () => {
+    if (scrollRef.current) {
+      const scrollLeft = scrollRef.current.scrollLeft;
+      const width = scrollRef.current.clientWidth;
+      const newActive = Math.round(scrollLeft / width);
+      setActiveSlide(newActive);
+    }
+  };
 
   return (
-    <main className="w-full bg-soft overflow-hidden">
+    <main className="w-full bg-soft">
       {/* Section Header — matches Hero style */}
       <div className="text-center pt-20 pb-4 px-4">
         <p className="text-dark/50 text-sm font-semibold uppercase tracking-widest mb-2">
@@ -22,11 +34,11 @@ const Portfolios = () => {
         <div className="mx-auto mt-6 w-16 h-1 bg-accent rounded-full" />
       </div>
 
-      {/* Radial Scroll Gallery */}
-      <div className="w-full">
+      {/* Desktop/Tablet: Radial Scroll Gallery */}
+      <div className="hidden md:block w-full">
         <RadialScrollGallery
           baseRadius={400}
-          mobileRadius={180}
+          mobileRadius={140}
           visiblePercentage={45}
           scrollDuration={3000}
         >
@@ -34,7 +46,7 @@ const Portfolios = () => {
             projects.map((project, index) => (
               <div
                 key={index}
-                className="relative w-48 h-64 md:w-64 md:h-80 rounded-2xl overflow-hidden cursor-pointer
+                className="relative w-64 h-80 rounded-2xl overflow-hidden cursor-pointer
                            shadow-xl border-2 border-white/60 group transition-transform duration-300 hover:scale-105"
                 onClick={() => navigate(`/project/${index}`)}
               >
@@ -56,6 +68,48 @@ const Portfolios = () => {
             ))
           }
         </RadialScrollGallery>
+      </div>
+
+      {/* Mobile: Horizontal Snap Scrolling Gallery */}
+      <div className="md:hidden w-full px-4 pb-20 pt-8">
+        <div 
+          ref={scrollRef}
+          onScroll={handleScroll}
+          className="flex overflow-x-auto gap-6 snap-x snap-mandatory scrollbar-hide pb-8" 
+          style={{ scrollBehavior: 'smooth' }}
+        >
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              onClick={() => navigate(`/project/${index}`)}
+              className="snap-center shrink-0 w-[85vw] h-[55vh] relative rounded-3xl overflow-hidden shadow-2xl cursor-pointer"
+            >
+              <img
+                src={project.mainImage}
+                alt={project.title}
+                className="w-full h-full object-cover brightness-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6">
+                <h3 className="text-white font-extrabold text-3xl mb-2">{project.title}</h3>
+                <div className="flex items-center gap-2">
+                  <p className="text-accent text-sm font-bold uppercase tracking-widest">
+                    View Case Study
+                  </p>
+                  <span className="text-accent text-lg">→</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Swipe Hint / Pagination */}
+        <div className="flex justify-center mt-4 space-x-2">
+          {projects.map((_, idx) => (
+            <div 
+              key={idx} 
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeSlide ? 'bg-accent w-4' : 'bg-gray-300'}`}
+            ></div>
+          ))}
+        </div>
       </div>
     </main>
   );
