@@ -11,7 +11,7 @@ import './App.css'
 import './index.css';
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState("home");
+  const [selectedPage, setSelectedPage] = useState("Home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
 
   useEffect(() => {

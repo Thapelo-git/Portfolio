@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Hero = ({setSelectedPage}) => {
   return (
-    <section className="relative min-h-screen bg-soft overflow-hidden">
+    <section id="home" className="relative min-h-screen bg-soft overflow-hidden">
       
       {/* BACKGROUND TEXT */}
       <h1 className="absolute inset-0 flex items-center justify-center 
@@ -43,7 +43,7 @@ const Hero = ({setSelectedPage}) => {
           <span className="absolute top-16 -left-10 bg-black text-white text-sm px-4 py-1 rounded-full">
            Mobile Developer
           </span>
-          <span className="absolute top-28 right-0 bg-black text-white text-sm px-4 py-1 rounded-full">
+          <span className="absolute top-28 right-0 bg-black text-white text-sm px-2 py-1 rounded-full">
            Software Developer
           </span>
 
@@ -57,8 +57,7 @@ const Hero = ({setSelectedPage}) => {
         <div className="flex justify-center lg:justify-end">
           <div className="bg-white text-gray-500 rounded-2xl p-6 w-[280px] shadow-xl">
             <p className="text-sm mb-4">
-              <strong>2+ Years of Expertise</strong> React Native & React JS(MERN stack).Freelance background in 
-                    React,Node,& PostgreSQL.
+              <strong>2+ years of experience</strong> React Native & React JS(MERN stack),with a  background of  building scalable web and mobile applications using React, Node.js, PostgreSQL, Supabase, Docker, and AWS.
             </p>
             <p className="underline text-sm mb-4">chabathapelo1@gmail.com</p>
             <AnchorLink 

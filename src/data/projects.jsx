@@ -29,7 +29,7 @@ export const projects = [
     overview: "A visually immersive storytelling website for showcasing nature photography and videos.",
     challenges: "Creating smooth, cross-browser compatible parallax effects and video integration without performance drops.",
     techStack: ["React", "Tailwind CSS", "Framer Motion", "Node.js", "Express", "MongoDB"],
-    liveDemo: "#",
+    liveDemo: "https://dancing-mandazi-3db288.netlify.app",
     sourceCode: "https://github.com/Thapelo-git/Assignment1-Hpage.git",
     thumbnails: [
       "/src/assets/coffee1.png",
