@@ -13,10 +13,10 @@ export const projects = [
     liveDemo: "https://astounding-liger-5f56f6.netlify.app/",
     sourceCode: "https://github.com/Thapelo-git/Streaming-Sites.git",
     thumbnails: [
-      "/src/assets/movie1.png",
-      "/src/assets/movie2.png",
+      "/assets/movie1.png",
+      "/assets/movie2.png",
     ],
-    mainImage: "/src/assets/movie.png",
+    mainImage: "/assets/movie.png",
   },
   {
     title: "Coffee Web Application",
@@ -32,10 +32,10 @@ export const projects = [
     liveDemo: "https://dancing-mandazi-3db288.netlify.app",
     sourceCode: "https://github.com/Thapelo-git/Assignment1-Hpage.git",
     thumbnails: [
-      "/src/assets/coffee1.png",
-      "/src/assets/coffee2.png",
+      "/assets/coffee1.png",
+      "/assets/coffee2.png",
     ],
-    mainImage: "/src/assets/coffee.png",
+    mainImage: "/assets/coffee.png",
   },
   // {
   //   title: "Book Marketplace Web Application (Merchant & Client)",
@@ -71,10 +71,10 @@ export const projects = [
     liveDemo: "https://incomparable-lolly-ee5e18.netlify.app/",
     sourceCode: "https://github.com/Thapelo-git/Recipes-Web.git",
     thumbnails: [
-      "/src/assets/recipe1.png",
-      "/src/assets/recipe3.png",
+      "/assets/recipe1.png",
+      "/assets/recipe3.png",
     ],
-    mainImage: "/src/assets/recipe.png",
+    mainImage: "/assets/recipe.png",
   },
   // {
   //   title: "Golden Hour",

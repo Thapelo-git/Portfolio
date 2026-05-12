@@ -1,8 +1,9 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
-import Close from "../assets/close-icon.png"
-import Menu from "../assets/menu.png"
+import Close from "/assets/close-icon.png"
+
+import Menu from "/assets/menu.png"
 const Link =({page,selectedPage,setSelectedPage})=>{
     const lowerCasePage = page.toLowerCase();
     return(

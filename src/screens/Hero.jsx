@@ -1,5 +1,5 @@
 //import portrait from '../assets/Pro.jpeg';
-import proNoB from '../assets/proNoB.png';
+import proNoB from '/assets/proNoB.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Hero = ({setSelectedPage}) => {
