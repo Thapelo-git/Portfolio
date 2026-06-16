@@ -20,10 +20,11 @@ const Hero = ({setSelectedPage}) => {
         {/* LEFT TEXT */}
         <div>
           <p className="mb-4"> Hi, I’m Thapelo Chaba</p>
+          
           <h2 className="text-5xl font-extrabold leading-tight">
            Full Stack <br />
             Developer <br />
-            & Mobile <br />
+           Web & Mobile <br />
             Developer
           </h2>
         </div>
@@ -57,7 +58,7 @@ const Hero = ({setSelectedPage}) => {
         <div className="flex justify-center lg:justify-end">
           <div className="bg-white text-gray-500 rounded-2xl p-6 w-[280px] shadow-xl">
             <p className="text-sm mb-4">
-              <strong>2+ years of experience</strong> React Native & React JS(MERN stack),with a  background of  building scalable web and mobile applications using React, Node.js, PostgreSQL, Supabase, Docker, and AWS.
+              <strong>3+ years of experience</strong> with a  background of  building scalable web and mobile applications using Next.js, PostgreSQL, Supabase, Docker,  AWS and MERN stack (React,Node.js,Express,MongoDB ) plus React Native .
             </p>
             <p className="underline text-sm mb-4">chabathapelo1@gmail.com</p>
             <AnchorLink 

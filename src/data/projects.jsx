@@ -76,25 +76,26 @@ export const projects = [
     ],
     mainImage: "/assets/recipe.png",
   },
-  // {
-  //   title: "Golden Hour",
-  //   date: "22 January 2022",
-  //   description:
-  //     "Capturing the fleeting moments of the golden hour. Warm tones and long shadows create a dramatic atmosphere.",
-  //   duration: "5 months",
-  //   role: "Full Stack Mobile Developer",
-  //   experience: "Mid-Level",
-  //   overview: "A mobile application that helps photographers track and predict the exact timing and quality of golden hours worldwide.",
-  //   challenges: "Integrating offline maps and complex weather APIs to provide accurate predictions even in remote areas.",
-  //   techStack: ["React Native", "Firebase", "Redux", "Google Maps API"],
-  //   liveDemo: "#",
-  //   sourceCode: "#",
-  //   thumbnails: [
-  //     "/src/assets/project-2.jpg",
-  //     "/src/assets/project-7.jpg",
-  //   ],
-  //   mainImage: "/src/assets/project-3.jpg",
-  // },
+  {
+    title: "BookBridge Web Application",
+    date: "22 January 2026",
+    description:
+      "Connects book merchants and readers anywhere.",
+    duration: "2 months",
+    role: "Full Stack  Developer",
+    experience: "Mid-Level",
+    overview: "Merchants list books. Customers browse and buy from any seller, anywhere. Simple catalog, direct orders",
+    challenges: "Integrating offline maps and complex weather APIs to provide accurate predictions even in remote areas.",
+    techStack: ["React ", "mongoDB", "Node.js","Express", "Google Maps API"],
+    liveDemo: "https://book-store-rho-gold.vercel.app/",
+    sourceCode: "https://github.com/Thapelo-git/BookStore.git",
+    thumbnails: [
+      "/assets/book2.png",
+      
+      "/assets/book3.png",
+    ],
+    mainImage: "/assets/book.png",
+  },
   // {
   //   title: "Monochrome",
   //   date: "15 February 2022",
