@@ -96,23 +96,42 @@ export const projects = [
     ],
     mainImage: "/assets/book.png",
   },
-  // {
-  //   title: "Monochrome",
-  //   date: "15 February 2022",
-  //   description:
-  //     "Stripping away color to focus on form, texture, and emotion. Black and white photography at its purest.",
-  //   duration: "2 months",
-  //   role: "Backend Developer",
-  //   experience: "Junior",
-  //   overview: "A specialized image processing API service that converts color images into high-quality, fine-art monochrome formats.",
-  //   challenges: "Optimizing image processing algorithms for speed and managing high server loads during peak usage.",
-  //   techStack: ["Node.js", "Python", "AWS S3", "Docker"],
-  //   liveDemo: "#",
-  //   sourceCode: "#",
-  //   thumbnails: [
-  //     "/src/assets/project-1.jpg",
-  //     "/src/assets/project-9.jpg",
-  //   ],
-  //   mainImage: "/src/assets/project-8.jpg",
-  // }
+  {
+    title: "MiraWash ",
+    date: "15 May 2026",
+    description:
+      "Doorstep Laundry is an on-demand laundry service for Johannesburg & surrounds. Customers book pickups online, pay a 40% deposit to confirm, and track their order in real time from pickup to delivery. Every load is quality-checked before it goes back out. Merchants manage orders, update status, and handle payments from a simple dashboard. The goal is to remove the hassle of laundry runs — customers get fresh, clean laundry delivered back without leaving home, and vendors get a structured way to manage bookings + payments.",
+    duration: "2 months",
+    role: "full stack Developer",
+    experience: "Mid-Level",
+    overview: "A specialized image processing API service that converts color images into high-quality, fine-art monochrome formats.",
+    challenges: "Optimizing image processing algorithms for speed and managing high server loads during peak usage.",
+    techStack: ["Next.js","PostgreSQL","Supabase", "AWS S3", "Docker"],
+    liveDemo: "https://0bit-mirawash.vercel.app/",
+    sourceCode: "https://github.com/Mr-DMoll/0bit-mirawash",
+    thumbnails: [
+      "/assets/mira2.png",
+      "/assets/mira1.png",
+    ],
+    mainImage: "/assets/Mira.png",
+  },
+    {
+    title: "Point of Sale (POS) System",
+    date: "15 june 2026",
+    description:
+      "A modern Point of Sale (POS) system designed for retail businesses, enabling efficient order management, inventory tracking, and sales reporting.",
+    duration: "2 months",
+    role: "full stack Developer",
+    experience: "Mid-Level",
+    overview: "A modern Point of Sale (POS) system designed for retail businesses, enabling efficient order management, inventory tracking, and sales reporting.",
+    challenges: "Implementing real-time inventory updates and ensuring secure payment processing while maintaining a user-friendly interface.",
+    techStack: ["Next.js","PostgreSQL","Supabase", "AWS S3", "Docker"],
+    liveDemo: "https://www.00s.co.za/",
+    sourceCode: "https://github.com/Mr-DMoll/0bit-pos",
+    thumbnails: [
+      "/assets/admin-activityLog.png",
+      "/assets/pos.png",
+    ],
+    mainImage: "/assets/admin-Analytic1.png",
+  }
 ];
