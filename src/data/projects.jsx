@@ -133,5 +133,24 @@ export const projects = [
       "/assets/pos.png",
     ],
     mainImage: "/assets/admin-Analytic1.png",
+  },
+   {
+    title: "WeddingFlow Web Application",
+    date: " 04 May 2026",
+    description:
+      "A modern web application for managing wedding planning and coordination, providing a seamless experience for couples and wedding Planner.",
+    duration: "2 months",
+    role: "full stack Developer",
+    experience: "Mid-Level",
+    overview: "A modern web application for managing wedding planning and coordination, providing a seamless experience for couples and wedding Planner.",
+    challenges: "Implementing real-time collaboration features and ensuring a responsive design across all devices.",
+    techStack: ["Next.js","PostgreSQL","Supabase", "AWS S3", "Docker"],
+    liveDemo: "https://monorepo-web-alpha-one.vercel.app/",
+    sourceCode: "https://github.com/Thapelo-git/monorepo.git",
+    thumbnails: [
+      "/assets/wedding1.png",
+      "/assets/wedding.png",
+    ],
+    mainImage: "/assets/wedding2.png",
   }
 ];
