@@ -2,12 +2,11 @@ export const projects = [
   {
     title: "Movie Web Application",
     date: "28 October 2025",
-    description:
-      "A sleek and interactive movie platform that brings the world of cinema to your fingertips. From trending blockbusters to hidden gems, users can explore, discover, and dive into detailed movie insights through a visually appealing and user-friendly interface.",
+    
     duration: "3 months",
     role: "Full Stack Developer",
     experience: "Mid-Level",
-    overview: "A comprehensive portrait photography platform allowing photographers to showcase their series.",
+    overview: "A comprehensive portrait photography platform allowing photographers to showcase their series.A sleek and interactive movie platform that brings the world of cinema to your fingertips. From trending blockbusters to hidden gems, users can explore, discover, and dive into detailed movie insights through a visually appealing and user-friendly interface.",
     challenges: "Handling high-resolution image uploads efficiently and managing dynamic state with complex animations.",
     techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     liveDemo: "https://astounding-liger-5f56f6.netlify.app/",
@@ -21,12 +20,11 @@ export const projects = [
   {
     title: "Coffee Web Application",
     date: "14 january 2026",
-    description:
-      "Discover the art of coffee with our meticulously crafted coffee web application. From bean origins to brewing perfection, embark on a sensory journey through the world of premium coffee blends and accessories. A must-have for every coffee enthusiast and connoisseur.",
+    
     duration: "2 months",
     role: "Frontend Developer",
     experience: "Junior",
-    overview: "A visually immersive storytelling website for showcasing nature photography and videos.",
+    overview:"Discover the art of coffee with our meticulously crafted coffee web application. From bean origins to brewing perfection, embark on a sensory journey through the world of premium coffee blends and accessories. A must-have for every coffee enthusiast and connoisseur.",
     challenges: "Creating smooth, cross-browser compatible parallax effects and video integration without performance drops.",
     techStack: ["React", "Tailwind CSS", "Framer Motion", "Node.js", "Express", "MongoDB"],
     liveDemo: "https://dancing-mandazi-3db288.netlify.app",
@@ -60,12 +58,11 @@ export const projects = [
   {
     title: "Recipe Web Application",
     date: "12 December 2025",
-    description:
-      "An interactive recipe-sharing platform where users can discover, create, and save recipes",
+   
     duration: "1 month",
     role: "UI/UX Designer & Developer",
     experience: "Mid-Level",
-    overview: "The application allows users to search recipes by ingredients, categories, or dietary preferences, and provides step-by-step cooking instructions",
+    overview: "The application allows users to search recipes by ingredients, categories, or dietary preferences, and provides step-by-step cooking instructions,An interactive recipe-sharing platform where users can discover, create, and save recipes",
     challenges: "Achieving a perfect balance of negative space and ensuring accessibility across a highly minimalist design.",
     techStack: ["React", "Tailwind CSS"],
     liveDemo: "https://incomparable-lolly-ee5e18.netlify.app/",
@@ -79,8 +76,7 @@ export const projects = [
   {
     title: "BookBridge Web Application",
     date: "22 January 2026",
-    description:
-      "Connects book merchants and readers anywhere.",
+    
     duration: "2 months",
     role: "Full Stack  Developer",
     experience: "Mid-Level",
@@ -99,12 +95,11 @@ export const projects = [
   {
     title: "MiraWash ",
     date: "15 May 2026",
-    description:
-      "Doorstep Laundry is an on-demand laundry service for Johannesburg & surrounds. Customers book pickups online, pay a 40% deposit to confirm, and track their order in real time from pickup to delivery. Every load is quality-checked before it goes back out. Merchants manage orders, update status, and handle payments from a simple dashboard. The goal is to remove the hassle of laundry runs — customers get fresh, clean laundry delivered back without leaving home, and vendors get a structured way to manage bookings + payments.",
+    
     duration: "2 months",
     role: "full stack Developer",
     experience: "Mid-Level",
-    overview: "A specialized image processing API service that converts color images into high-quality, fine-art monochrome formats.",
+    overview: "Doorstep Laundry is an on-demand laundry service for Johannesburg & surrounds. Customers book pickups online, pay a 40% deposit to confirm, and track their order in real time from pickup to delivery. Every load is quality-checked before it goes back out. Merchants manage orders, update status, and handle payments from a simple dashboard. The goal is to remove the hassle of laundry runs — customers get fresh, clean laundry delivered back without leaving home, and vendors get a structured way to manage bookings + payments.",
     challenges: "Optimizing image processing algorithms for speed and managing high server loads during peak usage.",
     techStack: ["Next.js","PostgreSQL","Supabase", "AWS S3", "Docker"],
     liveDemo: "https://0bit-mirawash.vercel.app/",
@@ -118,8 +113,7 @@ export const projects = [
     {
     title: "Point of Sale (POS) System",
     date: "15 june 2026",
-    description:
-      "A modern Point of Sale (POS) system designed for retail businesses, enabling efficient order management, inventory tracking, and sales reporting.",
+  
     duration: "2 months",
     role: "full stack Developer",
     experience: "Mid-Level",
@@ -137,8 +131,7 @@ export const projects = [
    {
     title: "WeddingFlow Web Application",
     date: " 04 May 2026",
-    description:
-      "A modern web application for managing wedding planning and coordination, providing a seamless experience for couples and wedding Planner.",
+   
     duration: "2 months",
     role: "full stack Developer",
     experience: "Mid-Level",
@@ -150,7 +143,32 @@ export const projects = [
     thumbnails: [
       "/assets/wedding1.png",
       "/assets/wedding.png",
+      "/assets/wedding3.png",
     ],
     mainImage: "/assets/wedding2.png",
+  },
+     {
+    title: "KasiFix marketplace platform ",
+    date: " 22 June 2026",
+   
+    duration: "1 week",
+    role: "full stack Developer",
+    experience: "Senior-Level",
+    overview: "kasiFix is a production-ready marketplace where customers browse, book, and pay for local services (cleaning, plumbing, beauty, tutoring, and more), vendors list and manage their offerings, and admins govern the platform through an approval workflow. It features role-based authentication, a vendor onboarding gate, AI-assisted search and listing generation, and a real-time booking pipeline",
+    challenges: "Implementing ai intagration.",
+    techStack: ["Frontend: Next.js 16 (App Router), React 19, TypeScript",
+"Backend: Express 4, TypeScript, Prisma ORM",
+"Database: PostgreSQL via Supabase",
+"Auth: JWT in httpOnly cookies, role-based middleware (Customer / Vendor / Admin)",
+"Monorepo: Turborepo + pnpm workspaces",
+"Deployment: Vercel (web), Render (API)"],
+    liveDemo: "https://0bit-pos.vercel.app/",
+    sourceCode: "https://github.com/Thapelo-git/0bit-pos.git",
+    thumbnails: [
+      "/assets/quote-calculator.png",
+      "/assets/service-detail.png",
+      
+    ],
+    mainImage: "/assets/home.png",
   }
 ];

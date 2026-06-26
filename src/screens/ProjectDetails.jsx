@@ -114,13 +114,13 @@ const ProjectDetails = () => {
           <div className="lg:col-span-3 space-y-10">
 
             {/* Description */}
-            <div>
+            {/* <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-8 h-1 bg-accent rounded-full" />
                 <h2 className="text-2xl font-extrabold text-dark">Description</h2>
               </div>
               <p className="text-dark/70 leading-relaxed text-lg">{project.description}</p>
-            </div>
+            </div> */}
 
             {/* Overview */}
             <div>
